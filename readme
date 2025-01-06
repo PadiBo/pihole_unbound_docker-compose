@@ -1,26 +1,25 @@
-<html>
-<H1>docker compose files for easy deployment of pihole and unbound.</H1>
+docker compose files for easy deployment of pihole and unbound
 
-<H2>Install Docker</H2>
-<br>
-<h3>Update and Upgrade>/h3>
-    <p>sudo apt update && sudo apt upgrade -y </p>
-<br>
-<h3>Install Docker</h3>
-    <p>curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh</p>
-<br>
-<h3>Add user to Docker Group</h3>
-    <p>sudo usermod -aG docker $USER</p>
-    <p>sudo reboot now</p>
-<br>
-<h3>Install Docker-Compose</h3>
-    <p>sudo apt-get install libffi-dev libssl-dev</p>
-    <p>sudo apt install python3-dev</p>
-    <p>sudo apt-get install -y python3 python3-pip</p>
-    <p>sudo apt install docker-compose</p>
-    <p>sudo systemctl enable docker</p>
-<br>
-<h3>Deploy Container</h3>
-    <b>git clone https://github.com/PadiBo/pihole_unbound_docker-compose.git</b>
-    <p>cd pihole_unbound_docker-compose</p>
-    <p>docker-compose docker-compose.yml</p>
+Install Docker
+
+>Update and Upgrade
+    sudo apt update && sudo apt upgrade -y
+
+>Install Docker
+    curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
+
+>Add user to Docker Group
+    sudo usermod -aG docker $USER
+    sudo reboot now
+
+>Install Docker-Compose
+    sudo apt-get install libffi-dev libssl-dev
+    sudo apt install python3-dev
+    sudo apt-get install -y python3 python3-pip
+    sudo apt install docker-compose
+    sudo systemctl enable docker
+
+>Deploy Container
+   >git clone https://github.com/PadiBo/pihole_unbound_docker-compose.git
+    cd pihole_unbound_docker-compose
+    docker-compose docker-compose.yml
